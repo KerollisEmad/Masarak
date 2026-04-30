@@ -15,10 +15,6 @@ export default function VerifyPage() {
     { id: 3, label: "Reset" },
   ];
 
-  // Auto focus first input
-  useEffect(() => {
-    inputsRef.current[0]?.focus();
-  }, []);
 
   // Handle OTP input
   const handleChange = (e, index) => {
