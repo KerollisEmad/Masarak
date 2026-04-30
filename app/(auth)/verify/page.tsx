@@ -120,7 +120,9 @@ export default function VerifyPage() {
             {[...Array(6)].map((_, i) => (
               <input
                 key={i}
-                ref={(el) => (inputsRef.current[i] = el)}
+                ref={(el) => {
+  inputsRef.current[i] = el;
+}}
                 maxLength={1}
                 type="text"
                 onChange={(e) => handleChange(e, i)}
